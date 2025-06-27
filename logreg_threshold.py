@@ -5,6 +5,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, classification_report, roc_auc_score
+from prediction_pipeline import load_and_preprocess_data, print_metrics, store_metrics
 
 # 1. Load dataset
 df = pd.read_csv('/Users/sptsai/Documents/GitHub/Stroke_Prediction/stroke_data.csv')

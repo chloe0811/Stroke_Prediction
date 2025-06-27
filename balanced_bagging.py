@@ -6,6 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import confusion_matrix, classification_report, roc_auc_score
 from imblearn.ensemble import BalancedBaggingClassifier
+from prediction_pipeline import load_and_preprocess_data, print_metrics, store_metrics
 
 # 1. Load dataset
 df = pd.read_csv('/Users/sptsai/Documents/GitHub/Stroke_Prediction/stroke_data.csv')
